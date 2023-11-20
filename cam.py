@@ -60,7 +60,7 @@ while cap is not None:
         cropped_face = cv2.resize(cropped_face, (48, 48))
         cropped_face = cv2.cvtColor(cropped_face, cv2.COLOR_BGR2GRAY)
         cropped_face = cropped_face.reshape(1, 48, 48, 1)
-        st.image(cropped_face)
+        # st.image(cropped_face)
         pred = model.predict(cropped_face)
 
         
